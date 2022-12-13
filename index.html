@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dátum narodenia</title>
+    <style>
+        form {
+            margin: auto;
+            text-align: center;
+            margin-top: 50px;
+            width: 300px;
+            border-radius: 15px;
+            padding: 40px;
+            background-image: url(images/time.jpg);
+
+        }
+
+        label {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        #obraz {
+            margin-top: 20px;
+            background-color: rgba(157, 234, 160, 0.8);
+            padding: 5px;
+            border-radius: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+        integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <form>
+        <label for="birthday">Dátum narodenia: </label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <button type="button" onclick="vyrataj()">Spočítaj dni do Birthday Párty</button>
+
+        <div id="obraz">Na tejto stránke si môžeš vypočítať o koľko dní máš narodeniny :)</div>
+    </form>
+    <script src="./narodeniny.js"></script>
+</body>
+
+</html>
